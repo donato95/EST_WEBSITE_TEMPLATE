@@ -1,3 +1,3 @@
 # EST_WEBSITE
-Single page company website
+Simple single page website for Easy Soft Techneology
 ### Project notes
