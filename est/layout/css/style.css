@@ -11,6 +11,7 @@
 }
 body {
     background-color: #f3f3f3;
+    font: 'droid-arabic-kufi', sans-serif;
 }
 a {
     text-decoration: none;
