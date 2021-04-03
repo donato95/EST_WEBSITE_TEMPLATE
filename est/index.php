@@ -1,0 +1,3 @@
+<?php
+
+	requir('homr.html')
