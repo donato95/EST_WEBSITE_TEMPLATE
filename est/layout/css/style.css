@@ -560,20 +560,7 @@ footer div.copyrights p {
 
 @media (max-width: 576px) {
     header.top-header div {
-        flex-flow: column wrap;
-        width: 100%;
-        text-align: center;
-    }
-    header.top-header div .info {
-        margin-right: 0;
-    }
-    header.top-header div .our-social-links {
-        margin-left: 0;
-        display: block;
-        text-align: center;
-    }
-    header.top-header div .our-social-links a {
-        display: inline-block;
+        display: none;
     }
     .site-header .cover nav.navbar ul.navbar-list {
         flex-direction: column;
@@ -611,20 +598,7 @@ footer div.copyrights p {
 }
 @media (min-width: 577px) and (max-width: 767px) {
     header.top-header div {
-        flex-flow: column wrap;
-        width: 100%;
-        text-align: center;
-    }
-    header.top-header div .info {
-        margin-right: 0;
-    }
-    header.top-header div .our-social-links {
-        margin-left: 0;
-        display: block;
-        text-align: center;
-    }
-    header.top-header div .our-social-links a {
-        display: inline-block;
+        display: none;
     }
     .site-header .cover nav.navbar ul.navbar-nav {
         flex-direction: column;
