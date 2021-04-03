@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-    // Declare all variables
     let $contactBtn     = $('.contact-button'),
         $window         = $(window),
         $navbarItems    = $('li.nav-item');
@@ -19,7 +18,6 @@ $(document).ready(function() {
     
     
     const readMoreHandle = function(paragraph, button) {
-        //const fullLength = paragraph.text().length;
         let maxLength = 100;
         let orignalText;
         let shortTxt;
@@ -44,15 +42,12 @@ $(document).ready(function() {
     };
     readMoreHandle($productsPara, $readMoreBtn);
 
-    // Adjest site header height
     $('.site-header').height($(window).height());
 
-    // Change avbar link color on focus
     $navbarItems.click(function(event) {
         $(this).addClass('active').siblings().removeClass('active');
     });
 
-    // Scroll throw section from navgation bar
     $navbarLink.click(function(event) {
         event.preventDefault();
         $('html, body').animate({
@@ -60,7 +55,6 @@ $(document).ready(function() {
         }, 1000);
     });
 
-    // Animate all buttons inside services section
     $section.hover(function() {
         $(this).each(function() {
             let $animate = $(this).find('button.animated');
@@ -85,7 +79,6 @@ $(document).ready(function() {
         }
     });
 
-    // Add box shadow on hover to each serveice section
     $sevrvice.each(function() {
         $(this).hover(function() {
             if($(this).hasClass('box-shadow')) {
@@ -96,7 +89,6 @@ $(document).ready(function() {
         });
     });
 
-    //Animate all button wepsite on hover
     $button.each(function() {
         $(this).hover(function() {
             if($(this).hasClass('tada')) {
@@ -107,7 +99,6 @@ $(document).ready(function() {
         });
     });
 
-    // Show hidden products when clicking on more button
     $('.more-products').click(function() {
         let hiddenProducts = $(this).parent().siblings('.hidden');
         hiddenProducts.addClass('show-hidden');
@@ -125,17 +116,12 @@ $(document).ready(function() {
         });
     });
 
-    // Scroll to contact us section when clicking on every contact us button
     $contactBtn.click(function(event) {
         event.preventDefault();
         $('html, body').animate({
             scrollTop: $contactSection.offset().top - 100
         }, 1000);
     });
-
-    /**
-     * Handling dom on scrolling 
-     */
     
     $window.on('scroll', function() {
         if($window.scrollTop() > 46) {
@@ -157,9 +143,6 @@ $(document).ready(function() {
         interval: 10000
     });
     
-    // Contact Form Handling
-
-    // Is Empty function that ckecks all fileds value
     const isEmpty = function(fields) {
         let name     = fields[0];
         let email    = fields[1];
@@ -179,7 +162,6 @@ $(document).ready(function() {
         }
     }
 
-    // Remove class disabled from sumit button when typing on input fields
     const buttonHandl = function(button) {
         button.hover(function() {
             if(isEmpty($input)) {
@@ -224,7 +206,6 @@ $(document).ready(function() {
     }
     onblurFocus($input);
 
-    // Empty fields after submitting send button
     const emptyFieldsF = function(fields) {
         fields.each(function() {
             let $this = $(this);
@@ -238,12 +219,10 @@ $(document).ready(function() {
         });
     }
 
-    // Send ajax request when submitting send button
     $('.send').click(function(event) {
         event.preventDefault();
         let form = $('form');
 
-        // Serialize form data 
         const formData = form.serialize();
         if($(this).submit) {
             $.ajax({
@@ -260,7 +239,6 @@ $(document).ready(function() {
                             $input.siblings('.error').fadeOut(300);
                                 $this.css({
                                     border: '1px solid #ced4da !important'
-                                    
                                 });
                            });
                         }

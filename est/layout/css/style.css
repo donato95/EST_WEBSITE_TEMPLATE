@@ -172,11 +172,9 @@ header.top-header div .our-social-links a {
     display: flex;
     flex-flow: row-reverse;
     color: #c9ced1;
-    margin-right: 15px;
+    margin-right: 5px;
     text-decoration: none;
     font-size: 20px;
-    border: 2px solid;
-    border-radius: 50%;
     width: 30px;
     height: 30px;
 }
@@ -483,8 +481,8 @@ section.contact-us .contact-info .contact div {
     flex-flow: row-reverse;
 }
 section.contact-us .contact-info .contact div i {
-    height: 100%;
     margin: 10px 5px;
+    top: 5px;
 }
 section.contact-us .contact-info .contact div p {
     margin: 10px 5px;
