@@ -455,6 +455,9 @@ section.contact-us .contact-form {
 section.contact-us .contact-form input.form-control {
     margin: 10px 0;
 }
+section.contact-us .contact-form form {
+    width: 100%;
+}
 section.contact-us .contact-form textarea {
     height: 270px;
 }
