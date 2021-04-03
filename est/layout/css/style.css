@@ -599,7 +599,8 @@ footer div.copyrights p {
         text-align: center !important;
     }
     footer div.follow-us div {
-        display: block;
+        margin: 5px auto;
+        width: 10%;
     }
 }
 @media (min-width: 577px) and (max-width: 767px) {
@@ -636,7 +637,8 @@ footer div.copyrights p {
         text-align: center !important;
     }
     footer div.follow-us div {
-        display: block;
+        margin: 5px auto;
+        width: 10%;
     }
     /*.geo-map .col.map-img img {
         border-radius: 0 !important;
