@@ -1,4 +1,1 @@
-<?php
-
-	requir('homr.html')
-	
+<?php include_once('home.html') ?>
