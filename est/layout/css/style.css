@@ -404,6 +404,9 @@ section.clients .carousel-inner .carousel-item .client {
     margin-top: auto;
     margin-bottom: auto;
 }
+section.clients .carousel-inner .carousel-item .client .img-cover h2 {
+    font-size: 2.5em;
+}   
 section.clients .carousel-inner .carousel-item div img {
     width: 100%;
     filter: grayscale(1);
@@ -588,6 +591,9 @@ footer div.copyrights p {
     section.contact-us .geo-map div {
         padding: 10px;
     }
+    section.clients .carousel-inner .carousel-item .client .img-cover h2 {
+        font-size: 1.5em;
+    } 
     footer div.our-email div, footer div.copyrights, footer div.follow-us {
         color: #fff;
         text-align: center !important;
@@ -621,6 +627,9 @@ footer div.copyrights p {
     }
     section.contact-us .contact-info {
         margin-left: 0;
+    }
+    section.clients .carousel-inner .carousel-item .client .img-cover h2 {
+        font-size: 1.5em;
     }
     footer div.our-email div, footer div.copyrights, footer div.follow-us {
         color: #fff;
