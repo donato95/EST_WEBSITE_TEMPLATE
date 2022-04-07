@@ -1,5 +1,5 @@
 # EST_WEBSITE
-Static single page website for Easy Soft Techneology
+Static Landing Page
 ### Project notes
 - The project is hosted on heroku for free
 - It was built with HTML5 CSS3 and jQuery
